@@ -1,6 +1,6 @@
-# tcg
+# TCG
 
-Projects:  
+### Projects:  
 1. Write a simple player to play Threes!.  
     * Time limit: 0.001 seconds/move  
     * Hint: use some simple heuristics to play; no search is required.  
