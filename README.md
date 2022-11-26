@@ -18,6 +18,14 @@
     ./threes --total=1000 --block=1000 --limit=1000 --play="alpha=0 load=weights.bin" --save stats.txt
     ```
 4. Write a MCTS program for the game of Hollow NoGo .  
-    * Beat a weak program given by TA.  
+    * Beat a weak program given by TA.
+    ```bash
+    # commands for player 1
+    P1B='./nogo --shell --name="Hollow-Black" --black="mcts count=500 rootParallel"'
+    P1W='./nogo --shell --name="Hollow-White" --white="mcts count=500 rootParallel"'
+    ```
+    ```bash
+    rm -rf gogui-twogtp-2022*
+    ```
 5. Improve the above MCTS program to attend the final tournament.  
     * Hint: no limitation about the method you use. E.g., you may use AlphaZero to do it.  
