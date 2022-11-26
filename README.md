@@ -9,6 +9,8 @@
     * Hint: use TD learning only. No search is required. 
     ```bash
     ./threes --total=1000 --block=1000 --limit=1000 --play="alpha=0 load=weights.bin" --save stats.txt
+    ```
+    ```bash
     ./threes-judge --load stats.txt --judge version=2
     ```
 3. Increase the winrate of the player.  
