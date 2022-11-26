@@ -7,11 +7,15 @@
 2. Write a player to play Threes! with high winrates.  
     * Time limit: 0.01 second/move  
     * Hint: use TD learning only. No search is required. 
-    * ./threes --total=1000 --block=1000 --limit=1000 --play="alpha=0 load=weights.bin" --save stats.txt 
+    ```bash
+    ./threes --total=1000 --block=1000 --limit=1000 --play="alpha=0 load=weights.bin" --save stats.txt
+    ```
 3. Increase the winrate of the player.  
     * Time limit: 5 seconds/move (to be modified)  
     * Hint: incorporate expectimax search into the player.
-    * ./threes --total=1000 --block=1000 --limit=1000 --play="alpha=0 load=weights.bin" --save stats.txt
+    ```bash
+    ./threes --total=1000 --block=1000 --limit=1000 --play="alpha=0 load=weights.bin" --save stats.txt
+    ```
 4. Write a MCTS program for the game of Hollow NoGo .  
     * Beat a weak program given by TA.  
 5. Improve the above MCTS program to attend the final tournament.  
