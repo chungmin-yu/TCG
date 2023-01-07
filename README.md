@@ -23,8 +23,8 @@
     * Beat a weak program given by TA.
     ```bash
     # commands for player 1
-    P1B='./nogo --shell --name="Hollow-Black" --black="mcts count=500 rootParallel"'
-    P1W='./nogo --shell --name="Hollow-White" --white="mcts count=500 rootParallel"'
+    P1B='./nogo --shell --name="Hollow-Black" --black="mcts count=8500 rootParallel"'
+    P1W='./nogo --shell --name="Hollow-White" --white="mcts count=8500 rootParallel"'
     ```
     ```bash
     rm -rf gogui-twogtp-2022*
