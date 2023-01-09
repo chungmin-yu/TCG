@@ -243,7 +243,7 @@ public:
 			int sum = takeSimulation(path.back()->state);
 			
 			// leaf parallel
-			/*int THREAD_NUM = omp_get_num_threads();
+			/*int THREAD_NUM = omp_get_max_threads();
 			omp_set_num_threads(THREAD_NUM);
 			std::vector<int> winner(THREAD_NUM, 0);
 			std::vector<board> chosenNode(THREAD_NUM, path.back()->state);
@@ -354,7 +354,7 @@ public:
 			// MCTS
 			// Root Parallelization
 			if (meta.find("rootParallel") != meta.end()){
-				int THREAD_NUM = omp_get_num_threads();
+				int THREAD_NUM = omp_get_max_threads();
 				omp_set_num_threads(THREAD_NUM);
 				std::vector<int> res_parallel(THREAD_NUM, 0);
 				#pragma omp parallel
